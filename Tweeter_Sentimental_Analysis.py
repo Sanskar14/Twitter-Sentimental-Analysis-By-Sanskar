@@ -120,7 +120,7 @@ length = len(tweets)
 corpuss = []
 for i in range(0,length):
     clean_tweet(tweets[i]["text"],corpuss)
-Xt = cv.fit_transform(corpuss).toarray()
+Xt = cv.transform(corpuss).toarray()
 #X=X.append(Xt)
 yt_pred = classifier.predict(Xt)
     
